@@ -1,0 +1,30 @@
+{
+  "name": "bycons",
+  "version": "1.0.2",
+  "description": "A simple npm package to get bootstrap-icons natively",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install",
+    "postinstall": "node ./postInstall.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/far11ven/bycons.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "icons",
+    "bootstrap-icons"
+  ],
+  "author": "far11ven",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/far11ven/bycons/issues"
+  },
+  "homepage": "https://github.com/far11ven/bycons#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.0.0-alpha",
+    "fs-extra": "^8.1.0"
+  }
+}
