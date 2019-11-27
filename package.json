@@ -1,6 +1,6 @@
 {
   "name": "bycons",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "A simple npm package to get bootstrap-icons natively",
   "main": "index.js",
   "scripts": {
