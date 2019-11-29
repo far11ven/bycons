@@ -1,6 +1,6 @@
 {
   "name": "bycons",
-  "version": "1.0.6",
+  "version": "1.2.2",
   "description": "A simple npm package to get bootstrap-icons natively",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,11 @@
   "homepage": "https://github.com/far11ven/bycons#readme",
   "dependencies": {
     "bootstrap-icons": "^1.0.0-alpha",
-    "fs-extra": "^8.1.0"
+    "fs-extra": "^8.1.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "file-loader": "^5.0.2"
   }
 }

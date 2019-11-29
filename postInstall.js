@@ -4,7 +4,7 @@ const path = require("path");
 const iconsDir = path.join(__dirname, "icons/");
 
 // destination.txt will be created or overwritten by default.
-fs.copy("../../node_modules/bootstrap-icons/icons", iconsDir, err => {
+fs.copy("node_modules/bootstrap-icons/icons", iconsDir, err => {
   if (err) throw err;
-  console.log("source.txt was copied to destination.txt");
+  console.log("source icons were copied to destination");
 });

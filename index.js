@@ -1,14 +1,19 @@
+var http = require("http");
 const path = require("path");
+const fs = require("fs");
 
-const iconPath = path.join(__dirname, "icons/");
-const finalPath = iconPath + "at.svg";
-const src = path.parse(finalPath);
-console.log("finalPath", finalPath);
-function get(svg) {
-  if (typeof svg === "string" && svg.length > 0) {
-    return src;
-  }
+let svg = "at";
+let src = "./../bycons/icons/" + svg + ".svg";
 
-  throw "requested icon doesn't exist";
-}
-module.exports = get;
+console.log(" src >>", src);
+
+fs.readFile(src, function(err, data) {
+  if (err) throw err; // Fail if the file can't be read.
+  http
+    .createServer(function(req, res) {
+      res.writeHead(200, { "Content-Type": "image/png" });
+      res.end(data); // Send the file data to the browser.
+    })
+    .listen(8124);
+  console.log("Server running at http://localhost:8124/");
+});
